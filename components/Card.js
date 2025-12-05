@@ -6,7 +6,7 @@ import {
   TouchableOpacity,
   View,
   Platform,
-  Alert,
+  Alert
 } from "react-native";
 
 const Card = () => {
@@ -64,7 +64,7 @@ const Card = () => {
       setEmail("");
       setMessage("");
     }, 2000);
-    Alert.alert("Success!", "Successfully submitted!");
+    Alert.alert("Message sent!");
   };
 
   return (
@@ -135,7 +135,7 @@ const styles = StyleSheet.create({
           height: 2,
         },
         shadowOpacity: 0.2,
-        shadowRadius: 4
+        shadowRadius: 4,
       },
       android: {
         elevation: 4,
